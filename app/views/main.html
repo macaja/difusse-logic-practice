@@ -1,10 +1,10 @@
-<div class="jumbotron">
-  <h3>Difusse Logic Practice</h3>
+<div ng-app="janusApp">
 
-    <button type="button" class="btn btn-primary" ui-sref=".triangle">Triangle</button>
-    <button type="button" class="btn btn-primary" ui-sref=".trapezoid">Trapezoid</button>
-    <button type="button" class="btn btn-primary" ui-sref=".gaussian">Gaussian</button>
-    <button type="button" class="btn btn-primary" ui-sref=".bell">Bell</button>
-    <button type="button" class="btn btn-primary" ui-sref=".sigmoid">Sigmoid</button>
-  <div ui-view></div>
+  <button type="button" class="btn btn-primary" ui-sref=".triangle" ng-model="name">Triangle</button>
+  <button type="button" class="btn btn-primary" ui-sref=".trapezoid" ng-model="name">Trapezoid</button>
+  <button type="button" class="btn btn-primary" ui-sref=".gaussian" ng-model="name">Gaussian</button>
+  <button type="button" class="btn btn-primary" ui-sref=".bell" ng-model="name">Bell</button>
+  <button type="button" class="btn btn-primary" ui-sref=".sigmoid" ng-model="name">Sigmoid</button>
+
+  <div ui-view=""></div>
 </div>
