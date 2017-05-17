@@ -25,8 +25,24 @@ angular
           url: '/home',
           templateUrl: '../views/main.html'
       })
+      .state('home.triangle', {
+          url: '/triangle',
+          templateUrl: '../views/triangle.html'
+      })
+      .state('home.trapezoid', {
+          url: '/trapezoid',
+          templateUrl: '../views/trapezoid.html'
+      })
+      .state('home.gaussian', {
+          url: '/gaussian',
+          templateUrl: '../views/gaussian.html'
+      })
       .state('home.bell', {
           url: '/bell',
           templateUrl: '../views/bell.html'
+      })
+      .state('home.sigmoid', {
+          url: '/sigmoid',
+          templateUrl: '../views/sigmoid.html'
       });
   });
