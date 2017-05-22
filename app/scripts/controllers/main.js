@@ -10,14 +10,36 @@
 angular.module('janusApp')
   .controller('MainCtrl', function ($scope) {
 
-  $scope.prueba = function(){alert("tin tin")};
+  $scope.gaussianFunction = function(){
+    $scope.fcn = $scope.bell.a;
+    $scope.draw();
+  }
+
+  $scope.sigmoidFunction = function(){
+    $scope.fcn = "x+2";
+    $scope.draw();
+  }
+  $scope.triangleFunction = function(){
+    $scope.fcn = "x+3";
+    $scope.draw();
+  }
+  $scope.trapezoidFunction = function(){
+    $scope.fcn = "x+4";
+    $scope.draw();
+  }
+
+  $scope.bellFunction = function(){
+    $scope.fcn = $scope.bell.a;
+    $scope.draw();
+  }
+
+
   $scope.draw =   function() {
-    alert("la buena");
       try {
         functionPlot({
           target: '#plot',
           data: [{
-            fn: document.getElementById('eq').value,
+            fn: $scope.fcn,
             sampler: 'builtIn',  // this will make function-plot use the evaluator of math.js
             graphType: 'polyline'
           }]
@@ -28,11 +50,9 @@ angular.module('janusApp')
         alert(err);
       }
     }
-
-    document.getElementById('form').onsubmit = function (event) {
+/*    document.getElementById('form').onsubmit = function (event) {
       event.preventDefault();
       draw();
-    };
+    };*/
 
-    //draw();
   });
