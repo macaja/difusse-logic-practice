@@ -1,16 +1,3 @@
-<div class="form-group" class="container">
-  <label for="exampleInputName2">a</label>
-  <input type="text" class="form-control" placeholder="Ingrese a" ng-model="bell.a">
-</div>
-<div class="form-group">
-  <label for="exampleInputEmail2">b</label>
-  <input type="text" class="form-control" placeholder="Ingrese b" ng-model="bell.b">
-</div>
-<div class="form-group">
-  <label for="exampleInputEmail2">c</label>
-  <input type="text" class="form-control" placeholder="Ingrese c" ng-model="bell.c">
-</div>
-
 <!DOCTYPE html>
 <html>
 
@@ -47,6 +34,20 @@
 <body>
 
   <form id="form" ng-submit="bellFunction()">
+
+    <div class="form-group" class="container">
+      <label for="exampleInputName2">a</label>
+      <input type="text" class="form-control" placeholder="Ingrese a" ng-model="bell.a" required>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail2">b</label>
+      <input type="text" class="form-control" placeholder="Ingrese b" ng-model="bell.b" required>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail2">c</label>
+      <input type="text" class="form-control" placeholder="Ingrese c" ng-model="bell.c" required>
+    </div>
+
     <input type="submit" class="btn btn-default" value="Draw" />
   </form>
 

@@ -1,16 +1,3 @@
-<div class="form-group" class="container">
-  <label for="exampleInputName2">a</label>
-  <input type="text" class="form-control" placeholder="Ingrese a" ng-model="gaussiana.a">
-</div>
-<div class="form-group">
-  <label for="exampleInputEmail2">b</label>
-  <input type="text" class="form-control" placeholder="Ingrese b" ng-model="gaussiana.b">
-</div>
-<div class="form-group">
-  <label for="exampleInputEmail2">c</label>
-  <input type="text" class="form-control" placeholder="Ingrese c" ng-model="gaussiana.c">
-</div>
-
 <!DOCTYPE html>
 <html>
 
@@ -47,11 +34,14 @@
 <body>
 
   <form id="form" ng-submit="gaussianFunction()">
-
-    <!--
-  <label for="eq">Enter an equation:</label>
-  <input type="text" id="eq" value="1/(1+(abs((x-1)/1))^(2*1))" ng-model="function" />
--->
+    <div class="form-group" class="container">
+      <label for="exampleInputName2">c</label>
+      <input type="text" class="form-control" placeholder="Ingrese a" ng-model="gaussiana.c">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail2">σ</label>
+      <input type="text" class="form-control" placeholder="Ingrese b" ng-model="gaussiana.sig">
+    </div>
     <input type="submit" class="btn btn-default" value="Draw" />
   </form>
 

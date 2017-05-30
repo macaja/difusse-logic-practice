@@ -1,16 +1,3 @@
-<div class="form-group" class="container">
-  <label for="exampleInputName2">a</label>
-  <input type="text" class="form-control" placeholder="Ingrese a" ng-model="sigmoid.a">
-</div>
-<div class="form-group">
-  <label for="exampleInputEmail2">b</label>
-  <input type="text" class="form-control" placeholder="Ingrese b" ng-model="sigmoid.b">
-</div>
-<div class="form-group">
-  <label for="exampleInputEmail2">c</label>
-  <input type="text" class="form-control" placeholder="Ingrese c" ng-model="sigmoid.c">
-</div>
-
 <!DOCTYPE html>
 <html>
 
@@ -47,6 +34,14 @@
 <body>
 
   <form id="form" ng-submit="sigmoidFunction()">
+    <div class="form-group" class="container">
+      <label for="exampleInputName2">a</label>
+      <input type="text" class="form-control" placeholder="Ingrese a" ng-model="sigmoid.a" required>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail2">b</label>
+      <input type="text" class="form-control" placeholder="Ingrese b" ng-model="sigmoid.b" required>
+    </div>
     <input type="submit" class="btn btn-default" value="Draw" />
   </form>
 

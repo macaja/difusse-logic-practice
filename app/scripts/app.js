@@ -48,6 +48,7 @@ angular
       })
       .state('home.sigmoid', {
           url: '/sigmoid',
-          templateUrl: '../views/sigmoid.html'
+          templateUrl: '../views/sigmoid.html',
+          controller:'MainCtrl'
       });
   });
