@@ -24,7 +24,6 @@ angular.module('janusApp')
     $scope.draw();
   }
   $scope.triangleFunction = function(){
-    $scope.fcn = "x+3";
     $scope.draw();
   }
   $scope.trapezoidFunction = function(){
@@ -45,6 +44,7 @@ angular.module('janusApp')
       try {
         functionPlot({
           target: '#plot',
+          title:'Gráfica',
           data: [{
             fn: $scope.fcn,
             sampler: 'builtIn',  // this will make function-plot use the evaluator of math.js
