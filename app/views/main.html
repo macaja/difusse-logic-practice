@@ -1,70 +1,74 @@
-
 <form ng-submit="allFunctions()">
 
   <div class="container" id="tourpackages-carousel">
     <div class="row">
       <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
         <div class="thumbnail">
-            <div class="caption">
-              <div class='col-lg-12 well well-add-card'>
-                  <h4>Triangle</h4>
-              </div>
-                <input type="text" class="form-control" placeholder="Ingrese a" ng-model="triangle.a">
-                <input type="text" class="form-control" placeholder="Ingrese b" ng-model="triangle.b">
-                <input type="text" class="form-control" placeholder="Ingrese c" ng-model="triangle.c">
+          <div class="caption">
+            <div class='col-lg-12 well well-add-card'>
+              <h4>Triangle</h4>
+            </div>
+            <input type="text" class="form-control" placeholder="Ingrese a" ng-model="triangle.a">
+            <input type="text" class="form-control" placeholder="Ingrese b" ng-model="triangle.b">
+            <input type="text" class="form-control" placeholder="Ingrese c" ng-model="triangle.c">
           </div>
         </div>
       </div>
       <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
         <div class="thumbnail">
-            <div class="caption">
-              <div class='col-lg-12 well well-add-card'>
-                  <h4>Trapezoid</h4>
-              </div>
-
-          </div>
-        </div>
-      </div>
-
-      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-        <div class="thumbnail">
-              <div class='col-lg-12 well well-add-card'>
-                  <h4>Bell</h4>
-              </div>
-                <input type="text" class="form-control" placeholder="Ingrese a" ng-model="bell.a" required>
-                <input type="text" class="form-control" placeholder="Ingrese b" ng-model="bell.b" required>
-                <input type="text" class="form-control" placeholder="Ingrese c" ng-model="bell.c" required>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-        <div class="thumbnail">
-            <div class="caption">
-              <div class='col-lg-12 well well-add-card'>
-                  <h4>Sigmoid</h4>
-              </div>
-                <input type="text" class="form-control" placeholder="Ingrese a" ng-model="sigmoid.a" required>
-                <input type="text" class="form-control" placeholder="Ingrese b" ng-model="sigmoid.b" required>
+          <div class="caption">
+            <div class='col-lg-12 well well-add-card'>
+              <h4>Trapezoid</h4>
+            </div>
+            <input type="text" class="form-control" placeholder="Ingrese a" ng-model="trapezoid.a">
+            <input type="text" class="form-control" placeholder="Ingrese b" ng-model="trapezoid.b">
+            <input type="text" class="form-control" placeholder="Ingrese c" ng-model="trapezoid.c">
+            <input type="text" class="form-control" placeholder="Ingrese c" ng-model="trapezoid.d">
           </div>
         </div>
       </div>
 
       <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
         <div class="thumbnail">
-            <div class="caption">
-              <div class='col-lg-12 well well-add-card'>
-                  <h4>Gaussian</h4>
-              </div>
-                <input type="text" class="form-control" placeholder="Ingrese c" ng-model="gaussiana.c">
-                <input type="text" class="form-control" placeholder="Ingrese σ" ng-model="gaussiana.sig">
+          <div class='col-lg-12 well well-add-card'>
+            <h4>Bell</h4>
           </div>
+          <input type="text" class="form-control" placeholder="Ingrese a" ng-model="bell.a" required>
+          <input type="text" class="form-control" placeholder="Ingrese b" ng-model="bell.b" required>
+          <input type="text" class="form-control" placeholder="Ingrese c" ng-model="bell.c" required>
         </div>
       </div>
+    </div>
 
-    </div><!-- End row -->
-  </div><!-- End container -->
+
+    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+      <div class="thumbnail">
+        <div class="caption">
+          <div class='col-lg-12 well well-add-card'>
+            <h4>Sigmoid</h4>
+          </div>
+          <input type="text" class="form-control" placeholder="Ingrese a" ng-model="sigmoid.a" required>
+          <input type="text" class="form-control" placeholder="Ingrese b" ng-model="sigmoid.b" required>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+      <div class="thumbnail">
+        <div class="caption">
+          <div class='col-lg-12 well well-add-card'>
+            <h4>Gaussian</h4>
+          </div>
+          <input type="text" class="form-control" placeholder="Ingrese c" ng-model="gaussiana.c">
+          <input type="text" class="form-control" placeholder="Ingrese σ" ng-model="gaussiana.sig">
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- End row -->
+  </div>
+  <!-- End container -->
 
   <input class="btn btn-primary" type="submit" value="Draw">
 </form>
